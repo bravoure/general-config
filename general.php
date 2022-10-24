@@ -18,10 +18,10 @@ $config
     // Files
     ->maxUploadFileSize('128M')
 
-    //Queue
+    // Queue
     ->runQueueAutomatically(false)
 
-    //Caching
+    // Caching
     ->enableGraphqlCaching(true)
 
     // Length of time Craft will store data, RSS feed, and template caches.
@@ -46,7 +46,7 @@ $config
     // File extensions
     ->allowedFileExtensions(
         array_diff($config->allowedFileExtensions,
-            ['webp', 'gif'])
+            ['webp', 'gif', 'mov', 'tif', 'webm'])
     );
 
 siteGlobal($config);
