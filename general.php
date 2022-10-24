@@ -46,7 +46,7 @@ $config
     // File extensions
     ->allowedFileExtensions(
         array_diff($config->allowedFileExtensions,
-            ['webp', 'gif', 'mov', 'tif'])
+            ['webp', 'gif'])
     );
 
 siteGlobal($config);
@@ -63,12 +63,6 @@ switch (CRAFT_ENVIRONMENT) {
         break;
     case 'buildTest':
         siteBuildTest($config);
-        break;
-    case 'dev':
-        siteDev($config);
-        break;
-    case 'test':
-        siteTest($config);
         break;
     case 'accept':
         siteAccept($config);
