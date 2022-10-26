@@ -66,6 +66,7 @@ switch (CRAFT_ENVIRONMENT) {
         break;
     case 'accept':
     case 'staging':
+        // servd accept is called staging
         siteAccept($config);
         break;
     case 'production':
