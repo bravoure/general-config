@@ -68,7 +68,7 @@ switch (CRAFT_ENVIRONMENT) {
         siteAccept($config);
         break;
     case 'production':
-        siteProdction($config);
+        siteProduction($config);
         break;
 }
 
