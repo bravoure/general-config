@@ -1,4 +1,5 @@
 <?php
+
 require_once 'site.php';
 
 $config = \craft\config\GeneralConfig::create();
