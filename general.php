@@ -65,6 +65,7 @@ switch (CRAFT_ENVIRONMENT) {
         siteBuildTest($config);
         break;
     case 'accept':
+    case 'staging':
         siteAccept($config);
         break;
     case 'production':
