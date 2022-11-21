@@ -58,6 +58,7 @@ switch (CRAFT_ENVIRONMENT) {
 
         if (file_exists(CRAFT_BASE_PATH . '/config/local_config.php')) {
             require_once 'local_config.php';
+            /* @phpstan-ignore-next-line */
             localConfig($config);
         }
 
