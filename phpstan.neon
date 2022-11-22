@@ -1,0 +1,10 @@
+includes:
+    - backend/vendor/craftcms/phpstan/phpstan.neon
+
+parameters:
+    level: 9
+    paths:
+        - backend
+    excludePaths:
+        - backend/vendor
+        - backend/storage
