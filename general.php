@@ -22,8 +22,9 @@ $config
     // Queue
     ->runQueueAutomatically(false)
 
-    // Caching
+    // Graphql
     ->enableGraphqlCaching(true)
+    ->enableGraphqlIntrospection(false)
 
     // Length of time Craft will store data, RSS feed, and template caches.
     // true, false, PT60M (60 Minutes), P1D (1 day) or check http://www.php.net/manual/en/dateinterval.construct.php.
