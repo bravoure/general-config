@@ -48,7 +48,7 @@ $config
     // File extensions
     ->allowedFileExtensions(
         array_diff($config->allowedFileExtensions,
-            ['webp', 'gif', 'mov', 'tif', 'webm', 'heic', 'heif', 'hevc'])
+            ['webp', 'gif', 'mov', 'tif', 'webm', 'heic', 'heif', 'hevc', 'avif'])
     );
 
 siteGlobal($config);
