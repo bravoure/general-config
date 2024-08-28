@@ -1,8 +1,10 @@
 <?php
 
+use \craft\config\GeneralConfig;
+
 require_once 'site.php';
 
-$config = \craft\config\GeneralConfig::create();
+$config = GeneralConfig::create();
 $config
     // HeadlessMode
     ->headlessMode(true)
